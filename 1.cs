@@ -21,30 +21,18 @@ namespace HomeWork
     public class _1
     {
 
-        public void One()
+        public void One(int one, int two)
         {
-            string one = "any1";
-            string two = "any2";
-            string result = one + " | " + two;
-
-            Console.WriteLine(result);
+            Console.WriteLine(one + " | " + two);
         }
 
-        public void Two()
+        public void Two(DateTime dateTime, int sec)
         {
-            DateTime dateTime = DateTime.Now;
-            int sec = 77;
-            dateTime = dateTime.AddSeconds(sec);
-
-            Console.WriteLine(dateTime);
+            Console.WriteLine(dateTime.AddSeconds(sec));
         }
 
-        public void Three()
+        public void Three(DateTime dateTime, string add, int addNum)
         {
-            DateTime dateTime = DateTime.Now;
-            string add = "random";
-            int addNum = 77;
-
             switch (add)
             {
                 case "second":
@@ -69,10 +57,10 @@ namespace HomeWork
             Console.WriteLine(dateTime);
         }
         
-        public void Four()
+        public void Four(int start, int end)
         {
-            int start = 10;
-            int end = 50;
+            start = 10;
+            end = 50;
 
             int[] result = Enumerable.Range(start, end - start + 1).ToArray();
 
@@ -80,10 +68,10 @@ namespace HomeWork
                 Console.WriteLine(result[i]);
         }
 
-        public void Five()
+        public void Five(int start, int end)
         {
-            int start = 10;
-            int end = 50;
+            start = 10;
+            end = 50;
 
             int[] result = Enumerable.Range(start, end - start + 1).ToArray();
 
@@ -91,22 +79,16 @@ namespace HomeWork
                 Console.WriteLine(result[i]);
         }
 
-        public void Six()
+        public void Six(int start, int end)
         {
-            int start = 0;
-            int end = 10;
-
             int[] result = Enumerable.Range(start, end).ToArray();
 
             for (int i = start; i < result.Length; i++)
                 Console.WriteLine(result[i]);
         }
 
-        public void Seven()
+        public void Seven(int start, int end)
         {
-            int start = 0;
-            int end = 10;
-
             int[] result = Enumerable.Range(start, end).ToArray();
 
             for (int i = start; i < result.Length; i++)
