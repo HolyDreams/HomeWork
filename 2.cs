@@ -48,7 +48,7 @@ namespace HomeWork
                         Type = (string)x["fields"]["geometry"]["type"],
                         Coordinates = x["fields"]["geometry"]["coordinates"].Select(q => (double)q),
                     },
-                    Record_Timestamp = (DateTime)x["fields"]["record_timestamp"]
+                    Record_Timestamp = (DateTime)x["fields"]["record_timestamp"],
                 }
             }).ToList();
 
